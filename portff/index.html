@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="port.css">
 </head>
 <body>
+    <div id="preloader">
+    </div>
     <div class="nav">
         <div class="logo">
             Antony Alex
@@ -45,6 +47,7 @@
         <div class="cc">
             <div class="ppic">
                 <a href="https://www.instagram.com/_.anto._10_/" target="_blank"><img src="pic2.png" alt="Profie Pic"></a>
+                <div class="iaa"><h2><span class="firr">I'm a</span> <span class="firr nnm">Web Developer</span></h2></div>
             </div>
             <div class="bod">
                 <p>Highly skilled in Python, Java, FrontEnd(HTML,CSS,JavaScript), and
@@ -64,12 +67,23 @@
                         <div class="tag">#React Js</div>
                         <div class="tag">#My Sql</div>
                         <div class="tag">#Java Script</div>
+
+                    </div>
+                    <div class="tagg">
+                        <div class="kk">#photoshop</div>
+                        <div class="kk">#Premiere Pro</div>
                     </div>
             </div>
         </div>
         
     </div>
     <div class="jim">
+        <div class="gl">
+            <h1>Achievement</h1>
+            <h4>Won 2nd place in project day</h4>
+            
+
+        </div>
         
     </div>
     <div class="projj" id="pr">
@@ -187,6 +201,36 @@
         <div class="line"></div>
         <h4>contact - alexantony726@gmail.com</h4>
     </div>
+    
+    <script>
+        const text = document.querySelector(".nnm");
 
+        const textload = () =>{
+            setTimeout(() =>{
+                text.textContent = "Web Developer";
+            },0);
+            setTimeout(() =>{
+                text.textContent = "Software Developer";
+            },4000);
+            setTimeout(() =>{
+                text.textContent = "ui/ux designer";
+            },8000);
+            setTimeout(() =>{
+                text.textContent = "Video Editor";
+            },12000);
+            
+            
+        }
+        textload();
+        setInterval(textload,16000);
+    </script>
+
+    <!-- <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load",function(){
+            loader.style.display = "none";
+        })
+    </script> -->
 </body>
 </html>
